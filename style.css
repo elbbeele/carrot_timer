@@ -1,0 +1,115 @@
+/* body {
+    font-family: sans-serif;
+    text-align: center;
+    padding-top: 50px;
+    background-color: #f0f0f0;
+  }
+  
+  #timer {
+    font-size: 48px;
+    margin: 20px;
+  }
+  
+  button {
+    font-size: 18px;
+    margin: 5px;
+    padding: 10px 20px;
+  }
+   */
+
+/* Apply custom font if you have one */
+@font-face {
+    font-family: 'carrotfont';
+    src: url('assets/fonts/carrot-font.ttf') format('truetype');
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #fff3e0; /* soft pastel orange */
+    font-family: 'Chewy', cursive, sans-serif;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'carrotfont', sans-serif;
+  }
+  
+  #background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.1; /* light transparent background image */
+  }
+  
+  #title {
+    margin-top: 40px;
+    font-size: 48px;
+    color: #e67e22;
+    text-shadow: 2px 2px #f8c291;
+    font-family: 'carrotfont', sans-serif;
+  }
+  
+  #timer-box {
+    margin-top: 30px;
+  }
+  
+  #minInput {
+    font-size: 20px;
+    padding: 10px 15px;
+    width: 100px;
+    border-radius: 12px;
+    border: 2px solid #e67e22;
+    outline: none;
+    text-align: center;
+    background-color: #fffaf0;
+    font-family: 'carrotfont', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #timer {
+    font-size: 56px;
+    margin: 30px 0;
+    color: #d35400;
+    font-weight: bold;
+    font-family: 'carrotfont', sans-serif;
+  }
+  
+  #buttons {
+    margin-top: 20px;
+  }
+  
+  .btn {
+    display: inline-flex; /* allows easy centering */
+    align-items: center;  /* vertical centering */
+    justify-content: center; /* horizontal centering */
+    width: 125px;
+    height: 44px;
+    margin: 0 12px;
+    cursor: pointer;
+  
+    background-color: transparent;
+    background-image: url('assets/button.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+  
+    transition: transform 0.2s ease-in-out;
+  
+    font-family: 'carrotfont', sans-serif;
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px #00000066;
+    border: none;
+    outline: none;
+  }
+  
+  .btn:hover {
+    transform: scale(1.1) rotate(-2deg);
+  }
+  
+
+  .icon{
+    background-color: transparent;
+  }

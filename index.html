@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>carrot timer app</title>
+        <link rel="stylesheet" href="style.css">
+      </head>
+      <body>
+        <h1>carrot timer</h1>
+        <!-- <img class="icon" src="assets/carrot.png"/> -->
+        
+        <!--animation of the carrot going to sleep -->
+        <div id="carrot-wrapper">
+          <img id="carrotAwake" src="assets/carrot.png" />
+          <img id="carrotSleep" src="assets/carrot-sleep.png" />
+        </div>
+
+
+        <label for="minInput">carrot sleep time:</label>
+        <input type="number" id="minutesInput" min="1" placeholder="e.g., 25" />
+
+        <div id="timer">00:00</div>
+
+        <div id="buttons">
+          <div class="btn" onclick="startTimer()">start</div>
+          <div class="btn" onclick="pauseTimer()">pause</div>
+          <div class="btn" onclick="resumeTimer()">resume</div>
+          <div class="btn" onclick="resetTimer()">reset</div>
+        </div>
+        
+        <script src="renderer.js"></script>
+      </body>
+</html>
